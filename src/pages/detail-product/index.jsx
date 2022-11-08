@@ -25,11 +25,13 @@ const DetailProduct = () => {
 
   return (
     <>
-     <Button type="primary" onClick={()=> navigate(`/detail-product/${onClick}`)}>DetailProduct</Button>
-      <div>DetailProduct</div>
+     <div className="text-center">
+      <div className="mb-5">DetailProduct</div>
       <p>Nama Product  :{product?.name}</p>
       <p>Harga         :{product?.price}</p>
       <p>Kategori      :{product?.categoryId?.name}</p>
+      <Button className="text-center m-4" type= "primary" onClick={()=> navigate(-1)}>Pulang</Button>
+      </div>
     </>
   );
 };
